@@ -38,10 +38,35 @@ $(function(){
     showUI(false);
 
     //add show core checkbox
-    $("body").append("<div class='buttomLeft'><div class='controlItem'><input id='AllCoresShow' type='checkbox' value=''><label>Show all Cores</label></div> <div class='controlItem'><input id='ShowUI' type='checkbox' value=''><label>Show UI</label></div></div>");
+    $("body").append(
+	"<div class='buttomLeft'>
+	    <div class='controlItem'>
+	    <input id='AllCoresShow' type='checkbox' value=''>
+	    <label>Show all Cores</label>
+	 </div> 
+	 <div class='controlItem'>
+	    <input id='ShowUI' type='checkbox' value=''>
+	    <label>Show UI</label></div>
+	 </div>"
+    );
     
     //modify css
-	addGlobalStyle('.outerla{display: none !important;} #zoom-tooltip{padding:0 !important; font-size: 10px;} #page_loader{display: none !important;} .navbar {padding: 0 !important; transform: scale(0.8,0.8); min-height: initial; margin: 0;} .buttomLeft{position: fixed; bottom: 0; padding:3px; z-index: 1030; } .controlItem {display: flex; padding: 5px 10px; color:#fff; font-size:10px; background: #000; border:1px solid #0ff; border-radius:50px} div.controlItem>* {margin:0;}');
+	addGlobalStyle('.outerla{display: none !important;} 
+		#zoom-tooltip{padding:0 !important; font-size: 10px;} 
+		#page_loader{display: none !important;} 
+		.navbar {padding: 0 !important; transform: scale(0.8,0.8); min-height: initial; margin: 0;} 
+                .buttomLeft{position: fixed; bottom: 0; padding:3px; z-index: 1030; } 
+                .controlItem {display: flex; 
+                              padding: 5px 10px; 
+                              color:#fff; 
+                              font-size:10px; 
+                              background: #000; 
+                              border:1px solid #0ff; 
+                              border-radius:50px
+                } 
+                div.controlItem>* 
+                {margin:0;}'
+        );
 });
 
 
